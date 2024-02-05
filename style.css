@@ -7,6 +7,12 @@
     animation-iteration-count: infinite;
 }
 
+.bottom-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 25px;
+    animation: rimbalzo 12s ease-in-out infinite;
+}
 
 
 .sfondo-animato {
@@ -45,4 +51,10 @@
     to {
         transform: translateX(-50%);
     }
+}
+
+@keyframes rimbalzo {
+    0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
