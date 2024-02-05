@@ -1,0 +1,46 @@
+/* @keyframes sfondo {
+  0% {
+    transform: background-color: #ffda79;
+  }
+
+  25% {
+    transform: bg-[#ffabe7];
+  }
+  50% {
+    transform: bg-[#d2bcf3];
+  }
+  75% {
+    transform: bg-[#d2bcf3];
+  }
+  100% {
+    transform: bg-[#ffda79];
+  }
+} */
+
+.sfondo-animato {
+    animation-name: sfondo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sfondo {
+    0% {
+        background-color: #ffda79;
+    }
+
+    25% {
+        background-color: #ffabe7;
+    }
+    
+    50%{
+        background-color: #d2bcf3;
+    }
+
+    75% {
+        background-color: #edf3d8;
+    }
+
+    100% {
+        background-color: #ffda79;
+    }
+}
