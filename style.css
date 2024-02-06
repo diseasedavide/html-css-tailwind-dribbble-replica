@@ -1,64 +1,81 @@
-main, header {
-    overflow-x: hidden;
+main,
+header {
+  overflow-x: hidden;
 }
 
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(6, 230px);
-    animation-name: movimento;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  display: grid;
+  grid-template-columns: repeat(6, 230px);
+  animation-name: movimento;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .bottom-container {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(8, 200px);
+    grid-template-rows: repeat(1, 200px);
     gap: 25px;
     animation: rimbalzo 12s ease-in-out infinite;
 }
 
 
 .sfondo-animato {
-    animation-name: sfondo;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+  animation-name: sfondo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes sfondo {
-    0% {
-        background-color: #ffda79;
-    }
+  0% {
+    background-color: #ffda79;
+  }
 
-    25% {
-        background-color: #ffabe7;
-    }
-    
-    50%{
-        background-color: #d2bcf3;
-    }
+  25% {
+    background-color: #ffabe7;
+  }
 
-    75% {
-        background-color: #edf3d8;
-    }
+  50% {
+    background-color: #d2bcf3;
+  }
 
-    100% {
-        background-color: #ffda79;
-    }
+  75% {
+    background-color: #edf3d8;
+  }
+
+  100% {
+    background-color: #ffda79;
+  }
 }
 
 @keyframes movimento {
-    from {
-        transform: translateX(0%);
-    }
+  from {
+    transform: translateX(0%);
+  }
 
-    to {
-        transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes rimbalzo {
-    0%, 100% {transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-	20%, 40%, 60%, 80% {transform: translateX(10px);}
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
