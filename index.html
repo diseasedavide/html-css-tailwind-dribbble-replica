@@ -19,21 +19,21 @@
       <nav>
         <!-- navcontainer -->
         <div
-          class="flex justify-between w-screen h-[100px] px-[24px] lg:h-[150px] lg:px-[55px]"
+          class="flex justify-between w-screen h-[100px] px-[24px] lg:h-[150px] lg:px-[55px] xl:h-[100px] xl:justify-start"
         >
           <!-- sottosezione nav1 -->
           <div class="flex justify-start items-center text-[20px]">
             <a href="">
               <i class="fa-solid fa-bars lg:hidden"></i>
             </a>
-            <a href="index.html" class="pl-5 italic w-[105px] lg:w-[140px]">
+            <a href="index.html" class="pl-5 italic w-[105px] lg:w-[140px] xl:w-[100px] xl:pl-0">
               <img src="/assets/logo.png" alt="Logo Dribbble" />
             </a>
           </div>
           <!-- sottosezione da lg in poi -->
           <div class="hidden lg:block">
             <div
-              class="lg:flex lg:w-[600px] lg:h-full lg:justify-between lg:items-center lg:mr-[180px] lg:ml-[30px] lg:text-[20px] lg:font-semibold"
+              class="lg:flex lg:w-[600px] lg:h-full lg:justify-between lg:items-center lg:mr-[180px] lg:ml-[30px] lg:text-[20px] lg:font-semibold xl:text-[17px] xl:justify-start xl:gap-7 xl:ml-7 xl:w-[500px] xl:mr-0"
             >
               <a href="">Find talent</a>
               <a href="">Inspiration</a>
@@ -47,17 +47,31 @@
           </div>
           <!-- sottosezione nav2 -->
           <div
-            class="w-[200px] flex justify-end items-center lg:w-[280px] lg:justify-between"
+            class="w-[200px] flex justify-end items-center lg:w-[280px] lg:justify-between xl:justify-end xl:w-full"
           >
+            <div class="hidden xl:block ">
+              <span class="flex relative items-center justify-center pl-[30px] ">
+                <i
+                  class="fa-solid fa-magnifying-glass relative left-7"
+                ></i>
+                <input
+                  type="search"
+                  name="cerca"
+                  id="cerca"
+                  placeholder="        Search.."
+                  class="w-[180px] rounded-3xl py-2"
+                />
+              </span>
+            </div>
             <i
-              class="fa-solid fa-magnifying-glass pr-7 text-[17px] lg:text-[22px]"
+              class="fa-solid fa-magnifying-glass pr-7 text-[17px] lg:text-[22px] xl:hidden"
             ></i>
-            <a href="" class="hidden lg:block lg:text-[20px] lg:font-semibold"
+            <a href="" class="hidden lg:block lg:text-[20px] lg:font-semibold xl:text-[17px]"
               >Log in</a
             >
             <a
               href=""
-              class="bg-[#0d0c22] text-[#fff] text-center rounded-full px-[25px] py-[14px] text-[14px] font-semibold lg:text-[20px]"
+              class="bg-[#0d0c22] text-[#fff] text-center rounded-full px-[25px] py-[14px] text-[14px] font-semibold lg:text-[20px] xl:text-[17px]"
               >Sign Up</a
             >
           </div>
@@ -318,9 +332,11 @@
         <h2 class="text-[35px] mb-11 md:text-[50px] lg:text-[68px] lg:mb-14">
           Explore inspiring designs
         </h2>
-        <ul class="md:px-6 md:mb-5 md:grid md:grid-rows-6 md:grid-cols-2 md:gap-12 lg:grid-rows-3 lg:grid-cols-3 ">
+        <ul
+          class="md:px-6 md:mb-5 md:grid md:grid-rows-6 md:grid-cols-2 md:gap-12 lg:grid-rows-3 lg:grid-cols-3"
+        >
           <!-- li1 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -346,7 +362,7 @@
             </div>
           </li>
           <!-- li2 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -372,7 +388,7 @@
             </div>
           </li>
           <!-- li3 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -398,7 +414,7 @@
             </div>
           </li>
           <!-- li4 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -424,7 +440,7 @@
             </div>
           </li>
           <!-- li5 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -450,7 +466,7 @@
             </div>
           </li>
           <!-- li6 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -476,7 +492,7 @@
             </div>
           </li>
           <!-- li7 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -502,7 +518,7 @@
             </div>
           </li>
           <!-- li8 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -528,7 +544,7 @@
             </div>
           </li>
           <!-- li9 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -554,7 +570,7 @@
             </div>
           </li>
           <!-- li10 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -580,7 +596,7 @@
             </div>
           </li>
           <!-- li11 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -606,7 +622,7 @@
             </div>
           </li>
           <!-- li12 -->
-          <li class=" mb-8 md:m-0 md:flex md:flex-col md:justify-center">
+          <li class="mb-8 md:m-0 md:flex md:flex-col md:justify-center">
             <img
               src="/assets/img/img-1.png"
               alt=""
@@ -651,7 +667,9 @@
           >
             Find your next designer today
           </h2>
-          <p class="text-center text-[20px] md:px-[80px] lg:text-[28px] lg:px-[250px]">
+          <p
+            class="text-center text-[20px] md:px-[80px] lg:text-[28px] lg:px-[250px]"
+          >
             The world's leading brands use Dribbble to hire creative talent.
             Browse millions of top-rated portfolios to find your perfect
             creative match.
@@ -678,86 +696,126 @@
       </section>
       <!-- quarta sezione -->
       <section class="mt-[60px] mb-[50px]">
-        <div class="pl-[23px] overflow-x-scroll lg:h-[280px] ">
+        <div class="pl-[23px] overflow-x-scroll lg:h-[280px]">
           <ul class="bottom-container gap-10 lg:gap-[80px]">
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
-            <li class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]">
+            <li
+              class="rounded-2xl h-[150px] w-[200px] lg:h-[190px] lg:w-[255px]"
+            >
               <img
                 src="/assets/img/img-15.jpg"
                 alt=""
                 class="lg:w-full lg:h-full object-cover rounded-xl"
               />
-              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]">Typography</span>
+              <span class="text-[14px] inline-block pt-[15px] lg:text-[18px]"
+                >Typography</span
+              >
             </li>
           </ul>
         </div>
       </section>
       <!-- contatti -->
       <section class="mt-[40px]">
-        <div class="flex flex-col justify-between  lg:flex-row lg:justify-between lg:px-[40px]">
+        <div
+          class="flex flex-col justify-between lg:flex-row lg:justify-between lg:px-[40px]"
+        >
           <!-- logo -->
-          <div class="w-full flex justify-center items-center lg:justify-start lg:w-[15%]">
-            <img src="/assets/logo.png" alt="logo" class="w-[100px] lg:w-[130px] lg:h-[60px] object-contain" />
+          <div
+            class="w-full flex justify-center items-center lg:justify-start lg:w-[15%]"
+          >
+            <img
+              src="/assets/logo.png"
+              alt="logo"
+              class="w-[100px] lg:w-[130px] lg:h-[60px] object-contain"
+            />
           </div>
           <!-- lista -->
           <div>
             <ul
-              class="flex text-[14px] justify-center font-semibold gap-2 flex-wrap px-[40px] my-[25px]  lg:flex-nowrap lg:px-0 lg:text-[20px] lg:gap-6"
+              class="flex text-[14px] justify-center font-semibold gap-2 flex-wrap px-[40px] my-[25px] lg:flex-nowrap lg:px-0 lg:text-[20px] lg:gap-6"
             >
               <li>
                 <a href="">For designers</a>
@@ -786,7 +844,9 @@
             </ul>
           </div>
           <!-- socials -->
-          <div class="w-full text-center text-[20px] lg:text-[27px] lg:w-[15%] lg:flex lg:justify-end items-center gap-3">
+          <div
+            class="w-full text-center text-[20px] lg:text-[27px] lg:w-[15%] lg:flex lg:justify-end items-center gap-3"
+          >
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook pl-[6px]"></i>
             <i class="fa-brands fa-instagram pl-[6px]"></i>
@@ -795,8 +855,12 @@
         </div>
       </section>
       <!-- footer -->
-      <footer class="mt-[80px] mb-[30px] flex flex-col justify-evenly gap-2 md:flex-row md:justify-center md:gap-5 md:mb-[40px] lg:px-12 lg:justify-between lg:mb-[50px]">
-        <ul class="flex flex-wrap gap-3 justify-center px-[45px] text-[14px] md:flex-nowrap md:px-0 md:gap-5 lg:text-[19px] lg:gap-7">
+      <footer
+        class="mt-[80px] mb-[30px] flex flex-col justify-evenly gap-2 md:flex-row md:justify-center md:gap-5 md:mb-[40px] lg:px-12 lg:justify-between lg:mb-[50px]"
+      >
+        <ul
+          class="flex flex-wrap gap-3 justify-center px-[45px] text-[14px] md:flex-nowrap md:px-0 md:gap-5 lg:text-[19px] lg:gap-7"
+        >
           <li>
             <span>© 2024 Dribbble</span>
           </li>
@@ -810,7 +874,9 @@
             <a href="">Cookies</a>
           </li>
         </ul>
-        <ul class="flex flex-wrap gap-3 justify-center px-[45px] text-[14px] md:flex-nowrap md:px-0 md:gap-5 lg:text-[19px] lg:gap-7">
+        <ul
+          class="flex flex-wrap gap-3 justify-center px-[45px] text-[14px] md:flex-nowrap md:px-0 md:gap-5 lg:text-[19px] lg:gap-7"
+        >
           <li>
             <a href="">Jobs</a>
           </li>
