@@ -19,10 +19,12 @@
       <nav>
         <!-- navcontainer -->
         <div
-          class="flex justify-between w-screen h-[100px] px-[24px] lg:px-3 xl:h-[100px] xl:justify-start xl:px-[37px]"
+          class="flex justify-between w-screen h-[100px] px-[24px] lg:px-3 xl:h-[100px] xl:justify-start xl:px-[37px] min-[1400px]:justify-between min-[1400px]:px-10"
         >
           <!-- sottosezione nav1 -->
-          <div class="flex justify-start items-center text-[20px]">
+          <div
+            class="flex justify-start items-center text-[20px] min-[1400px]:hidden"
+          >
             <a href="">
               <i class="fa-solid fa-bars lg:hidden"></i>
             </a>
@@ -33,10 +35,21 @@
               <img src="/assets/logo.png" alt="Logo Dribbble" />
             </a>
           </div>
+          <!-- sottosezione logo centrale -->
+          <div class="hidden min-[1400px]:block min-[1400px]:order-2">
+            <div class="flex justify-center items-center h-full">
+              <a
+              href="index.html"
+              class=""
+            >
+              <img src="/assets/logo.png" alt="Logo Dribbble" class="h-full w-[100px]"/>
+            </a>
+            </div>
+          </div>
           <!-- sottosezione da lg in poi -->
-          <div class="hidden lg:block">
+          <div class="hidden lg:block min-[1400px]:order-1">
             <div
-              class="lg:flex lg:gap-7 lg:h-full lg:justify-between lg:items-center lg:pr-[100px] lg:m-0 lg:text-[15px] lg:font-semibold xl:text-[15px] xl:justify-between xl:gap-3 xl:ml-7 xl:w-[500px] xl:mr-0 xl:pr-[70px]"
+              class="lg:flex lg:gap-7 lg:h-full lg:justify-between lg:items-center lg:pr-[100px] lg:m-0 lg:text-[15px] lg:font-semibold xl:text-[15px] xl:justify-between xl:gap-3 xl:ml-7 xl:w-[500px] xl:mr-0 xl:pr-[70px] min-[1400px]:ml-0 min-[1400px]:gap-6"
             >
               <a href="">Find talent</a>
               <a href="">Inspiration</a>
@@ -50,7 +63,7 @@
           </div>
           <!-- sottosezione nav2 -->
           <div
-            class="w-[200px] flex justify-end items-center lg:w-[280px] lg:justify-center xl:justify-end xl:w-full"
+            class="w-[200px] flex justify-end items-center lg:w-[280px] lg:justify-center xl:justify-end xl:w-full min-[1400px]:order-3 min-[1400px]:order-3 min-[1400px]:w-[480px] "
           >
             <div class="hidden xl:block">
               <span
@@ -334,7 +347,9 @@
       </div>
       <!-- seconda sezione del sito -->
       <section class="mt-5 flex flex-col items-center lg:mt-0">
-        <h2 class="text-[35px] text-center px-6 mb-11 md:text-[50px] lg:text-[53px] lg:mb-14">
+        <h2
+          class="text-[35px] text-center px-6 mb-11 md:text-[50px] lg:text-[53px] lg:mb-14"
+        >
           Explore inspiring designs
         </h2>
         <ul
@@ -906,5 +921,4 @@
   </body>
 </html>
 
-<!-- TODO: 1400+ NAV -->
 <!-- TODO: FIX IMG -->
