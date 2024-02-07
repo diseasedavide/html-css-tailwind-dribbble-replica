@@ -1,4 +1,4 @@
-# Replica dribbble.com using only HTML, CSS, TAILWIND
+# Replica dribbble.com using only HTML, CSS, TAILWIND (CDN)
 
 ## My aim
 
